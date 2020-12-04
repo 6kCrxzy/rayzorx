@@ -1,0 +1,12 @@
+
+local UserData = tostring(game:GetService("RbxAnalyticsService"):GetClientId())
+local SubData = UserData:gsub("-", "")
+
+print(SubData)
+setclipboard(SubData)
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Whitelister",
+			Text = "Copied your ID. Send to Joker or 6Ex! (Paste It)",
+			Duration = 999999
+		})
